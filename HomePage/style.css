@@ -1,0 +1,740 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/digital-7-mono');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background-image: url('/Images/Logos&Background/site.webp');
+    background-repeat: no-repeat;
+   background-size: cover; 
+   background-attachment: fixed;
+   overflow-x: hidden;
+}
+/*                                   Navigation Bar                                                */
+.navigationbar h1 {
+    color: aliceblue;
+}
+
+.navigationbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    margin-left: -5px;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navigationbar nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+a:hover {
+    color: rgb(42, 94, 114); /* Change the text color on hover */
+}
+
+.home-link {
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.search-container {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
+.rounded-search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid aliceblue;
+    outline: none;
+    background-color: transparent;
+    margin-left: 20px;
+    color:white;
+    
+}
+
+.search-icon {
+    margin-left: 30px; /* Adjust the margin to position the icon */
+    color:white;
+}
+.menu-icon{
+    display: none;
+}
+
+.fas.fa-search {
+    font-size: 20px; /* Adjust the icon size */
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    border-top-left-radius:0 ;
+    background-color:aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    height: 5px;
+}
+
+/* Style the dropdown links */
+.dropdown-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-item i {
+    color: #aaa; /* Color for the arrow icon */
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* FontAwesome icon style (you should include the FontAwesome library) */
+.dropdown-item i {
+    font-size: 12px;
+}
+/*                                      About Us                                         */
+.section{
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden; /* Hide content overflow during animation */
+    
+}
+.section h1{
+    font-family: "Montserrat", "sans-serif";
+}
+.container{
+    
+    width: 80%;
+    
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    padding-top: 80px;
+    transform: translateY(-100%); /* Initially off the screen */
+    opacity: 0.2; /* Initially less clear */
+    transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out; /* Add transition for smooth sliding effect */
+}
+
+.container.show {
+    transform: translateY(0); /* Slide in from bottom to top */
+    opacity: 1; /* Fully clear */
+}
+.content-section{
+    float:right;
+    width:55%;
+
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color:aliceblue;
+    text-align:left ;
+    margin-right: 5px;
+
+}
+.content-section .content p{
+    margin-top:20px;
+    color:aliceblue;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom:10px ;
+    font-family: sans-serif;
+
+}
+.content-section .content h3{
+    margin-top:20px;
+    color:aliceblue;
+    font-family: sans-serif;
+
+}
+.content-section .content .button{
+    margin-top: 30px;
+    
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding:12px 40px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color:#fff;
+    
+} 
+.content-section .social{
+    margin-top:20px;
+}
+.content-section .social .fa-facebook-f{
+    color:aliceblue;
+    font-size: 60px;
+    padding:0px 10px;
+}
+.content-section .social .fa-facebook-f:hover{
+    color:grey;
+    
+}
+.content-section .social .fa-youtube{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.content-section .social .fa-youtube:hover{
+    color:grey;   
+}
+.content-section .social .fa-instagram{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.content-section .social .fa-instagram:hover{
+    color:grey;
+    
+}
+.content-section .social .fa-linkedin{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.content-section .social .fa-linkedin:hover{
+    color:grey;
+    
+}
+/* date , time and temperature */
+.dtt-container{
+    margin-top: 140px;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+.dtt-container h1{
+    width: 50%;
+    position: relative;
+    margin-top: -50px;
+    background-color: black;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:red;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 10px solid grey;
+    border-radius: 5px;
+    font-size: 100px;
+    font-family: 'Digital-7', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.dtt-container h2{
+    width: 50%;
+    color:#fff;
+    margin-left: 150px;
+    font-size: 90px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+.dtt-container h3{
+    margin-left: 150px;
+
+    width: 50%;
+    
+    position: relative;
+    margin-right: auto;
+    color:#fff;
+    font-size: 90px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.weather-container {
+    background-image: url('/Images/Logos&Background/khamkeo-vilaysing-rpVQJbZMw8o-unsplash.jpg');
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -280px;
+    margin-left: auto;
+    max-width: 300px;
+    height: 230px;
+    margin-right: 50px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container h1 {
+    font-size: 40px;
+    margin-top:50px ;
+    color: aliceblue;
+    margin-top: -10px;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+}
+
+#temperature {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 27px;
+    margin-top: 13px;
+}
+#precipitation {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    margin-top: 13px;
+}
+#wind-speed {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    margin-top: 13px;
+}
+#humidity {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+
+
+
+
+
+/*                               Footer style                                   */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(31, 38, 65, 0.9);
+    margin-top:50px;
+    height: 380px;
+    width: 100%;
+}
+
+.footer-left img {
+    width: 300px; /* Adjust the width of the logo as needed */
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    
+    align-items: center;
+    color:aliceblue;
+    padding: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    list-style: none;
+    
+}
+
+.footer-right {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.footer-right ul li {
+    margin-right: 10px;
+
+}
+
+.footer-right ul li img {
+    width: 30px; /* Adjust the width of the social media icons as needed */
+}
+.footer-right .social-media-icons  .fa-facebook-f{
+    color:aliceblue;
+    font-size: 80px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-facebook-f:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons  .fa-youtube{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons .fa-youtube:hover{
+    color:grey;   
+}
+.footer-right .social-media-icons  .fa-instagram{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-instagram:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons .fa-linkedin{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-linkedin:hover{
+    color:grey;
+    
+}
+.copyright {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    margin-top: 340px;
+}
+footer p{
+    color: aliceblue;
+    font-size: large;
+    font-family: "Montserrat", "sans-serif";
+
+}
+.email img{
+    width: 20px;
+    margin-bottom: -5px;
+
+}
+/* Common styles for all screen sizes */
+
+
+
+
+/*  a mobile-first media query for iPhone 12 */
+@media  only screen and (max-width: 450px)  {
+    html, body {
+         background-image: url('/Images/Logos&Background/back_responsive.webp');
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         background-attachment: fixed;
+         overflow-x: none;
+         
+     }
+     .logo img{
+         margin-left: -10px;
+         width:100px;
+         
+     }
+     
+     
+     .navigationbar {
+         
+         align-items: center;
+         padding: 20px;
+         width: 90%;
+     }
+     nav {
+         display: none;
+         background-color: rgba(31, 38, 65, 0.9);
+         position:absolute;
+         top: 10px;
+         right: 0;
+         width: max-content;
+         z-index: 1;
+       }
+       
+       nav ul {
+         width: 130px;
+         position: fixed;
+         margin-top: 47px;
+         
+         right: 20px;
+         background-color: rgba(31, 38, 65, 0.9);
+         list-style: none;
+     }
+     
+     nav ul li{
+         display: block;
+         margin-top: 10px;
+         text-align: right;
+         margin-bottom: 10px;
+         margin-right: 25px;
+ 
+     }
+ 
+       
+     nav ul li a {
+         color: aliceblue;
+         text-decoration: none;
+         display: block;
+         padding: 3px 10px;
+         font-size: 10px;
+       }
+       
+    
+       .dropdown:hover .dropdown-content {
+        display: none;
+        
+    }
+     .menu-icon {
+         color: aliceblue;
+         font-size: 20px;
+         cursor: pointer;
+         display: block;
+         margin-left:230px;
+         
+       }
+     
+     #menulist{
+         overflow: hidden;
+         transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+         
+     }
+     .rounded-search {
+         display: none;
+        /* Adjust padding for the search input */
+     }
+     
+     .search-icon {
+        display: none;
+     }
+     .section{
+
+        width: 390px;
+    }
+    
+    .content-section .title h1{
+        width: 300px;
+        font-size: 25px;
+         /* Adjust the title font size */
+         margin-left: -10px;
+    }
+    
+    .content-section .content p {
+        margin-left: -2px;
+        width: 300px;
+      font-size: 13px; /* Adjust font size for content */
+    }
+    
+    .content-section .content h3 {
+        margin-left: -3px;
+        width: max-content;
+      font-size: 13px; /* Adjust font size for heading */
+    }
+    .content-section .content .button{
+        width: max-content;
+        
+       
+    }
+    .content-section .content .button a{
+    
+      padding: 10px 30px; /* Adjust button padding */
+      font-size: 15px; /* Adjust button font size */
+    }
+    
+    .content-section .social .fa-facebook-f,
+    .content-section .social .fa-youtube,
+    .content-section .social .fa-instagram,
+    .content-section .social .fa-linkedin {
+        
+      font-size: 40px; /* Adjust social media icon size */
+      padding: 0 5px; /* Adjust padding for social media icons */
+    }
+    .dtt-container{
+        margin-top: 100px;
+        margin-bottom: 10px;
+        position: relative;
+        
+    }
+    .dtt-container h1{
+        width: 80%;
+        position: relative;
+        
+        background-color: black;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:red;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 10px solid grey;
+        border-radius: 5px;
+        font-size: 30px;
+        font-family: 'Digital-7', sans-serif;
+        text-align: center;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    .dtt-container h2{
+        width: 50%;
+        color:#fff;
+        margin-left: 30px;
+        font-size: 20px;
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: 600;
+        letter-spacing: 3px;
+        position: relative;
+        margin-bottom: 40px;
+        
+    }
+    .dtt-container h3{
+        margin-left: 30px;
+    
+        width: 50%;
+        
+        position: relative;
+        margin-right: auto;
+        color:#fff;
+        font-size: 30px;
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    .weather-container {
+        background-image: url('/Images/Logos&Background/khamkeo-vilaysing-rpVQJbZMw8o-unsplash.jpg');
+        border-radius: 10px;
+        padding: 20px;
+        height: max-content;
+        margin-top: -130px;
+        margin-left: auto;
+        max-width: 150px;
+        height: 240px;
+        margin-right: 20px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .weather-container h1 {
+        font-size: 30px;
+        margin-top:50px ;
+        color: aliceblue;
+        margin-top: -10px;
+        text-align: center;
+        font-family: "Montserrat", "sans-serif";
+    }
+    
+    #temperature {
+        color: aliceblue;
+        text-align: center;
+        font-family: "Montserrat", "sans-serif";
+        font-size: 27px;
+        margin-top: 13px;
+    }
+    #precipitation {
+        color: aliceblue;
+        text-align: center;
+        font-family: "Montserrat", "sans-serif";
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    #wind-speed {
+        color: aliceblue;
+        text-align: center;
+        font-family: "Montserrat", "sans-serif";
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    #humidity {
+        color: aliceblue;
+        text-align: center;
+        font-family: "Montserrat", "sans-serif";
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    
+    footer{
+        width: 100%;
+        height: max-content;
+    }
+    .footer-left img {
+        margin-right: 39px;
+        width: 150px; /* Adjust the width of the logo as needed */
+    }
+    .footer-right {
+        position: relative;
+        align-items: center;
+        display: none;
+        
+    }
+    .copyright {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 3;
+        width: 100%;
+        margin-top: 290px;
+        margin-bottom: -40px;
+    }
+    
+    footer .footer-list ul{
+        margin-right: 20px;
+        margin-left: -50px;
+        margin-top: 20px;
+     }
+      .email{
+        margin-top: 25px;
+        margin-bottom: 80px;
+      } 
+    .email img{
+        margin-bottom: -5px;
+        margin-left: -30px;
+    }
+  }
+  

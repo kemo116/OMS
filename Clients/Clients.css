@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Images/Logos&Background/site.webp');
+    background-repeat: no-repeat;
+   background-size: cover; 
+   background-attachment: fixed;
+   overflow-x: hidden;
+}
+/*                                   Navigation Bar                                                */
+/*                                   Navigation Bar                                                */
+.navigationbar h1 {
+    color: aliceblue;
+}
+
+.navigationbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    margin-left: -5px;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navigationbar nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+a:hover {
+    color: rgb(42, 94, 114); /* Change the text color on hover */
+}
+.client-link {
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/* Modify your existing styles and add new styles */
+/* Modify your existing styles and add new styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 15px;
+    border-top-left-radius:0 ;
+    background-color: aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    height: 5px;
+}
+
+/* Style the dropdown links */
+.dropdown-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-item i {
+    color: #aaa; /* Color for the arrow icon */
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* FontAwesome icon style (you should include the FontAwesome library) */
+.dropdown-item i {
+    font-size: 12px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+/*                        Our Clients                               */
+.client-wrap h1{
+    color: aliceblue;
+    }
+.client-wrap{
+    
+    place-items: center;
+   align-items: center;
+   margin-top: 75px;
+    height: auto;
+    text-align: center;
+}
+.client-wrap h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Barlow', sans-serif;
+}
+.client-wrap hr{
+    width:15%;
+    height:5px;
+    border:none;
+    background: #26ccca;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.client-in {
+    width: 105%;
+    
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 30px;
+    margin-left: -20px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.slide img {
+     /* Adjust the maximum width as needed to make the images smaller */
+    height: 250px;
+}
+#photo-3 img{
+    margin-left:50px ;
+    margin-top: -50px;
+ width: 900px;
+ height: 400px;
+}
+#photo-6 img{
+    margin-top: -50px;
+    width: 700px;
+    height: 420px;
+}
+#photo-9 img{
+    margin-top: -50px;
+    width: 700px;
+    height: 420px;
+}
+/* Add the transition property to the .slide class */
+.slide {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s; /* Smooth transition for the opacity property */
+}
+
+/* Adjust the opacity when a slide is active */
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+/* Add styling for pagination dots */
+.pagination-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s, cursor 0.3s; /* Add transition for dot color and cursor */
+    cursor: pointer; /* Set cursor to pointer when hovering */
+}
+
+/* Styling for active dot */
+.dot.active {
+    background-color: #333;
+    cursor: default; /* Set cursor back to default when active */
+}
+
+.slideshow-container{
+    height: 300px;
+    width: 100%;
+}
+/* Add CSS for play/pause button */
+#playPauseButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#playPauseIcon {
+    margin-top: 10px;
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+}
+
+
+
+
+
+/*                               Footer style                                   */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(31, 38, 65, 0.9);
+    margin-top:50px;
+    height: 380px;
+    width: 100%;
+}
+
+.footer-left img {
+    width: 300px; /* Adjust the width of the logo as needed */
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    
+    align-items: center;
+    color:aliceblue;
+    padding: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    list-style: none;
+    
+}
+
+.footer-right {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.footer-right ul li {
+    margin-right: 10px;
+
+}
+
+.footer-right ul li img {
+    width: 30px; /* Adjust the width of the social media icons as needed */
+}
+.footer-right .social-media-icons  .fa-facebook-f{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-facebook-f:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons  .fa-youtube{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons .fa-youtube:hover{
+    color:grey;   
+}
+.footer-right .social-media-icons  .fa-instagram{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-instagram:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons .fa-linkedin{
+    color:aliceblue;
+    font-size: 50px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-linkedin:hover{
+    color:grey;
+    
+}
+.copyright {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    margin-top: 340px;
+}
+footer p{
+    color: aliceblue;
+    font-size: large;
+    font-family: "Montserrat", "sans-serif";
+
+}
+.email img{
+    width: 20px;
+    margin-bottom: -5px;
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    html,body {
+        background-image: url('/Images/Logos&Background/back_responsive.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+        background-attachment: fixed;
+        overflow-x: hidden;
+        
+    }
+    .logo img{
+        margin-left: -10px;
+        width:100px;
+        
+    }
+    
+    
+    .navigationbar {
+        
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+    }
+    nav {
+        display: none;
+        background-color: rgba(31, 38, 65, 0.9);
+        position:absolute;
+        top: 10px;
+        right: 0;
+        width: max-content;
+        z-index: 1;
+      }
+      
+      nav ul {
+        width: 130px;
+        position: fixed;
+        margin-top: 47px;
+        
+        right: 20px;
+        background-color: rgba(31, 38, 65, 0.9);
+        list-style: none;
+    }
+    
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        text-align: right;
+        margin-bottom: 10px;
+        margin-right: 25px;
+
+    }
+
+      hr{
+        display: none;
+      }
+    nav ul li a {
+        color: aliceblue;
+        text-decoration: none;
+        display: block;
+        padding: 3px 10px;
+        font-size: 10px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: none;
+        
+    }
+      
+    .menu-icon {
+        color: aliceblue;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+        margin-left:225px;
+        
+      }
+    
+    #menulist{
+        overflow: hidden;
+        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+        
+    }
+    .rounded-search {
+        display: none;
+       /* Adjust padding for the search input */
+    }
+    
+    .search-icon {
+       display: none;
+    }
+    
+    .section{
+
+        width: 390px;
+    }
+    
+    .content-section .title h1{
+        width: 300px;
+        font-size: 25px;
+         /* Adjust the title font size */
+         margin-left: -10px;
+    }
+    
+    .content-section .content p {
+        margin-left: -2px;
+        width: 300px;
+      font-size: 13px; /* Adjust font size for content */
+    }
+    
+    .content-section .content h3 {
+        margin-left: -3px;
+        width: max-content;
+      font-size: 13px; /* Adjust font size for heading */
+    }
+    .content-section .content .button{
+        width: max-content;
+        
+       
+    }
+    .content-section .content .button a{
+    
+      padding: 10px 30px; /* Adjust button padding */
+      font-size: 15px; /* Adjust button font size */
+    }
+
+
+    /*              client section                   */
+    .client-wrap h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Barlow', sans-serif;
+    }
+    .client-wrap hr{
+        width:40%;
+        
+    }
+    .client-in {
+        width: 116%;
+        
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 30px;
+        margin-left: -20px;
+        padding: 50px;
+        margin-bottom: 20px;
+        height:450px;
+    }
+    .slide img {
+         /* Adjust the maximum width as needed to make the images smaller */
+        height: 150px;
+        margin-left: -20px;
+    }
+    #photo-1 img{
+        
+        width: 300px;
+        
+    }
+    #photo-2 img{
+        margin-left:-30px ;
+        margin-top: -30px;
+        width: 300px;
+        height: 250px;
+    }
+    #photo-3 img{
+        margin-left:-80px ;
+        margin-top: -50px;
+        width: 500px;
+        height: 350px;
+    }
+    #photo-4 img{
+        
+        width: 300px;
+        
+    }
+    #photo-5 img{
+        
+        width: 300px;
+        
+    }
+    #photo-6 img{
+        margin-top: -50px;
+        margin-left: -40px;
+        width: 400px;
+        height: 300px;
+    }
+    #photo-7 img{
+        width: 300px;
+    }
+    #photo-8 img{
+        margin-top: -50px;
+        margin-left: -20px;
+        width: 350px;
+        height: 330px;
+    }
+    #photo-9 img{
+        margin-top: -50px;
+        width: 300px;
+        height: 350px;
+    }
+    #photo-10 img{
+        margin-top: -50px;
+        width: 400px;
+        height: 300px;
+    }
+    #photo-11 img{
+        margin-top: -50px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* Add the transition property to the .slide class */
+    .slide {
+        display: none;
+        width: 100%;
+        transition: opacity 0.5s; /* Smooth transition for the opacity property */
+    }
+    
+    /* Adjust the opacity when a slide is active */
+    .slide.active {
+        display: block;
+        opacity: 1;
+    }
+    /* Add styling for pagination dots */
+    .pagination-dots {
+        text-align: center;
+        margin-top: 10px;
+        margin-top: -40px;
+    }
+    
+    .dot {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 8px 9px;
+        background-color: #bbb;
+        border-radius: 50%;
+        transition: background-color 0.3s, cursor 0.3s; /* Add transition for dot color and cursor */
+        cursor: pointer; /* Set cursor to pointer when hovering */
+    }
+    
+    /* Styling for active dot */
+    .dot.active {
+        background-color: #333;
+        cursor: default; /* Set cursor back to default when active */
+    }
+    
+    .slideshow-container{
+        height: 300px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: max-content;
+    }
+    .footer-left img {
+        margin-right: 39px;
+        width: 150px; /* Adjust the width of the logo as needed */
+    }
+    .footer-right {
+        position: relative;
+        align-items: center;
+        display: none;
+        
+    }
+    .copyright {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 3;
+        width: 100%;
+        margin-top: 290px;
+        margin-bottom: -40px;
+    }
+    
+    footer .footer-list ul{
+        margin-right: 20px;
+        margin-left: -50px;
+        margin-top: 20px;
+     }
+      .email{
+        margin-top: 25px;
+        margin-bottom: 80px;
+      } 
+    .email img{
+        margin-bottom: -5px;
+        margin-left: -30px;
+    }
+  }
+  

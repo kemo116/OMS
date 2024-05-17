@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ProductionTv/Prodstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css" integrity="sha512-ZviKYgETX0n1JH/5oqX7QZ8JQp8pFLBtkKj4Bk+SnZGvUjg/KP7Lk02ScHTLMLM5N7RFyX+qf7eeo+elYKxaxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/BrowerIcon/favicon-32x32.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />  
+    
+    <meta name="theme-color" content="#ffffff">
+    <script src="/ProductionTv/script.js" >
+        
+    </script>
+    
+    <title>OMS</title>
+</head>
+<body>
+    <!-------------------------------Navigation Bar---------------------------------------->
+    <div class="navigationbar">
+        <div class="logo"><a href="/index.html"><img src="/Images/Logos&Background/1white txt.png" alt="" width="125px"></a> </div>
+        
+        <nav>
+            <ul id="menulist">
+                <li> <a href="/index.html">HOME</a> </li>
+                <li> <a href="/AboutUs/About.html">ABOUT US</a> </li>
+                <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+                <li><a href="/ProductionTv/ProdTv.html" class="prod-link">PRODUCTION TV</a></li>
+                <li><a href="/Radio/Radio.html">RADIO</a></li>
+                <li><a href="/Digital/digital.html">DIGITAL</a></li>
+                <!--<li><a href="/BTL/Btl.html">BTL</a></li>-->
+                <li><a href="/Outdoor/Outdoor.html">OUT DOOR</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menu-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-------------------------------1st Category ---------------------------------------->
+    <div class="header"><h1>ProductionTv</h1></div>
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category1','main-scroll-div-1','1')">
+            <div id="header-container">
+                <h1>Furniture</h1>
+            </div>
+            
+            <i id="1" class="fas fa-angle-right"></i>
+            
+        </button>
+        <div id="category1" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-1">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-1')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-1">
+                        <div class="child" onclick="openModal('myModal')">
+                            <img class="child-img" src="/Images/سكرين/اثاث/ستاير نجيب سليم.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Naguib Seleim</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal2')">
+                            <img class="child-img" src="/Images/سكرين/اثاث/قباني.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Kabbani Furniture</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal3')">
+                            <img class="child-img" src="/Images/سكرين/اثاث/مراتب فانتازيا1.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Fantazzia</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal4')">
+                            <img class="child-img" src="/Images/سكرين/اثاث/مراتب فانتازيا2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Fantazzia</h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-1')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal('myModal')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/BWTC_Nssr0I?si=JxqZ4cXaxRDp7ToA" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <span class="close" onclick="closeModal('myModal2')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/kkrwzWjfQk8?si=kgjRaV7VonppAfwj" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal3" class="modal">
+        <span class="close" onclick="closeModal('myModal3')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/7xRVUut-UdA?si=irjJgtqTuDybY84Y" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal4" class="modal">
+        <span class="close" onclick="closeModal('myModal4')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe  src="https://www.youtube.com/embed/WGQr4700ft8?si=gFzAcpQ7s1Zt3Dw0" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    
+
+
+    <!-------------------------------2nd Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category2', 'main-scroll-div-2','2')">
+            <h1>Electronics</h1>
+            <i id="2" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category2" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-2">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-2')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-2">
+                        <div class="child" onclick="openModal('myModal5')">
+                            <img class="child-img" src="/Images/سكرين/ادوات كهربائية/دريم 2000.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Dream 2000</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal6')">
+                            <img class="child-img" src="/Images/سكرين/ادوات كهربائية/راش براش2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Rush Brush</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal7')">
+                            <img class="child-img" src="/Images/سكرين/ادوات كهربائية/شيري & بيري.webp"  alt="image">
+                            <div class="image-details">
+                                <h2>Cherry & Berry</h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-2')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal5" class="modal">
+        <span class="close" onclick="closeModal('myModal5')">&times;</span>
+        <div class="modal-content">
+            <iframe  src="https://www.youtube.com/embed/7umwXrS46W8?si=ipKwf5EG2MYuNX1V" title="YouTube video player" frameborder="0" loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal6" class="modal">
+        <span class="close" onclick="closeModal('myModal6')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/w7yyYJtnBLM?si=4AqBDTrUAZiPhmTl" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal7" class="modal">
+        <span class="close" onclick="closeModal('myModal7')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/qhQtPQp33io?si=xsU_vsZPHnHYR8T0" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </div>  
+    <!-------------------------------3rd Category ---------------------------------------->
+    
+
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category3', 'main-scroll-div-3','3')">
+            <h1>Food & Beverages</h1>
+            <i id="3" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category3" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-3">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-3')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-3">
+                        <div class="child" onclick="openModal('myModal8')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/صلاح و عبدالفتاح.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Salah.Abdelftah</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal9')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/ويلز.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Weals</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal10')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/ايتوال رمضان.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Etoile Patisserie</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal11')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/ايتوال المولد1.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Etoile Patisserie </h2>
+                               
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal12')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/ايتوال ابلكيشن.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Etoile Patisserie App</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal13')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/ايتوال العيد.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Etoile Patisserie</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal14')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/الفارس2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Al Fares</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal15')">
+                            <img class="child-img" src="/Images/سكرين/اغذية/الفارس.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Al Fares</h2>
+                                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-3')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal8" class="modal">
+        <span class="close" onclick="closeModal('myModal8')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fomsadvertisingagency%2Fvideos%2F1470514467124440%2F&show_text=false&width=560&t=0"  loading="lazy" sandbox="allow-scripts allow-same-origin" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>        </div>
+    </div>
+    <div id="myModal9" class="modal">
+        <span class="close" onclick="closeModal('myModal9')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/puruQg8LGhs?si=t5XrAnPAVskWBXL5" title="YouTube video player"  loading="lazy" sandbox="allow-scripts allow-same-origin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal10" class="modal">
+        <span class="close" onclick="closeModal('myModal10')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/Fty_1mf5gtM?si=ajFKUQXY6PggubTo" title="YouTube video player"  loading="lazy" sandbox="allow-scripts allow-same-origin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal11" class="modal">
+        <span class="close" onclick="closeModal('myModal11')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/xhL5EOZic_I?si=F_0yvXjxbjEaiO6X" title="YouTube video player" frameborder="0"  loading="lazy" sandbox="allow-scripts allow-same-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal12" class="modal">
+        <span class="close" onclick="closeModal('myModal12')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/D7yDt-jknYk?si=oVMSCAiPBzHPBqFl"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal13" class="modal">
+        <span class="close" onclick="closeModal('myModal13')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe  src="https://www.youtube.com/embed/vrCQmBnlx0M?si=QsrPyrruIweduULf"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+    </div>
+    <div id="myModal14" class="modal">
+        <span class="close" onclick="closeModal('myModal14')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe  src="https://www.youtube.com/embed/U22WayLgbig?si=jZ5pfGga65e7wc1D"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal15" class="modal">
+        <span class="close" onclick="closeModal('myModal15')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe  src="https://www.youtube.com/embed/vrCQmBnlx0M?si=QsrPyrruIweduULf"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+
+    <!-------------------------------4th Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category4', 'main-scroll-div-4','4')">
+            <h1>Real Estate</h1>
+            <i id="4" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category4" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-4">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-4')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-4">
+                        <div class="child" onclick="openModal('myModal19')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/مكاني المخطوبين.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Makani Couple</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal20')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/مكاني رجل الاعمال.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Makani Business Man </h2>
+                               
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal21')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/مكاني الجيم.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Makani Gym</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal22')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/مكاني العيلة.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Makani Family</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal23')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/مكاني الكلب.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Makani - ElMansour Developments</h2> 
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal16')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/ايست كايرو.webp" alt="image">
+                            <div class="image-details">
+                                <h2>East Cairo</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal17')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/اليكس ويست.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Alex West</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal18')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/اليكس ويست 2.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Alex West</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal24')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/تاهيتي لاند.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Tahiti Land</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal25')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/علاء الدين الجمهورية.webp" alt="image">
+                            <div class="image-details">
+                                <h2>El Gumhouria For Urban Development</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal26')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/سندريلا الجمهورية.webp" alt="image">
+                            <div class="image-details">
+                                <h2>El Gumhouria For Urban Development</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal27')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/الجمهورية للتنمية العمرانية.webp" alt="image">
+                            <div class="image-details">
+                                <h2>El Gumhouria For Urban Development</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal28')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/ماستر جروب.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Master Group</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal29')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/Genova.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Genova</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal30')">
+                            <img class="child-img" src="/Images/سكرين/عقارات/اروما.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Aroma</h2>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-4')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal16" class="modal">
+        <span class="close" onclick="closeModal('myModal16')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/_WPazZZLT7c?si=Qp5rNTd43vhCBPHS"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal17" class="modal">
+        <span class="close" onclick="closeModal('myModal17')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/y-VUOyImCjE?si=A62M472mwHTPTyOv"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal18" class="modal">
+        <span class="close" onclick="closeModal('myModal18')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/hVAq_WUomUM?si=UFhY78ro3Cn8W6gs"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal19" class="modal">
+        <span class="close" onclick="closeModal('myModal19')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/ZGpBJVHEUuA?si=yb_AXUjCQYexP6Cq"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal20" class="modal">
+        <span class="close" onclick="closeModal('myModal20')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/RkLEztv0h2M?si=0FS1JSJQTN-Kpcbz"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal21" class="modal">
+        <span class="close" onclick="closeModal('myModal21')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/76-urb8zDEU?si=FwfgjhXdcBBFYRsJ"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal22" class="modal">
+        <span class="close" onclick="closeModal('myModal22')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe  src="https://www.youtube.com/embed/BDmVENCw4Wk?si=a7KjY36HibgH47hy"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal23" class="modal">
+        <span class="close" onclick="closeModal('myModal23')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/K9J0BXL-Epw?si=wCw1F6SYrwu5oTeE"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal24" class="modal">
+        <span class="close" onclick="closeModal('myModal24')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/3PLvDz0vuVs?si=14KJMxv5QNt9DcCE"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal25" class="modal">
+        <span class="close" onclick="closeModal('myModal25')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/6xg9EqnkyDw?si=BBlyKDDnRfoS12l1"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal26" class="modal">
+        <span class="close" onclick="closeModal('myModal26')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/6SwRqT02sLU?si=AwY3PIfk5x6lzZis"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal27" class="modal">
+        <span class="close" onclick="closeModal('myModal27')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/PaZkP7lesEI?si=0zjLG9TiZRvRjvgm"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal28" class="modal">
+        <span class="close" onclick="closeModal('myModal28')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/HuU1VT6QuTY?si=-lPL0FHJg2PpgsZk"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal29" class="modal">
+        <span class="close" onclick="closeModal('myModal29')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/Vaippc8slpA?si=1tnHL4F8hWOwiRkR"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal30" class="modal">
+        <span class="close" onclick="closeModal('myModal30')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/kbA0RcNEJaI?si=pQPBZXvO9yxEle0i"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+        <!-------------------------------5th Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category5', 'main-scroll-div-5','5')">
+            <h1>Cosmetics</h1>
+            <i id="5" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category5" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-5">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-5')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-5">
+                        <div class="child" onclick="openModal('myModal31')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/اوبال.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Shower Opal</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal32')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/اندرا.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Endra</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal33')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/باندولين الكريم.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Pendoline Cream</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal34')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/بندولين 1.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Pendoline Cream</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal35')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/بندولين 2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Pendoline Cream </h2>
+                               
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal36')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/باتي.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Batty</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal37')">
+                            <img class="child-img" src="/Images/سكرين/كوزماتيك/زيت حرير.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Harir Oil</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                        <div>
+                    
+                            <button class="icon right" onclick="scrollr('image-container-5')">
+                             <i class="fas fa-angle-double-right"></i>
+                            </button>
+                        </div> 
+            </div>
+        </div>
+    </div>
+    <div id="myModal31" class="modal">
+        <span class="close" onclick="closeModal('myModal31')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/V-is7s89axY?si=tDva-capINTD4Kgk"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal32" class="modal">
+        <span class="close" onclick="closeModal('myModal32')">&times;</span>
+        <div class="modal-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mSMhQbO54fA?si=F9dSCzoCYU9vSl-U"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal33" class="modal">
+        <span class="close" onclick="closeModal('myModal33')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/vM1-JGVWFCY?si=ncmEMIcxkbE4zUzC"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal34" class="modal">
+        <span class="close" onclick="closeModal('myModal34')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/Y--E7AOwRU4?si=vmtszd8zDS_gAoXk"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal35" class="modal">
+        <span class="close" onclick="closeModal('myModal35')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe  src="https://www.youtube.com/embed/Kab_xSecJ0c?si=L0TOso0xpDMCYOA6"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal36" class="modal">
+        <span class="close" onclick="closeModal('myModal36')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/6R94rbLJ4y4?si=BBL3VQfBkpc4R_Jg"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal37" class="modal">
+        <span class="close" onclick="closeModal('myModal37')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/ZcD4pA0OrrY?si=uaNcVtYGiwhLuWEX"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+
+    <!-------------------------------6th Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category6', 'main-scroll-div-6','6')">
+            <h1>Pharmaceutical</h1>
+            <i id="6" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category6" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-6">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-6')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-6">
+                        <div class="child" onclick="openModal('myModal38')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/العزبي.webp" alt="image">
+                            <div class="image-details">
+                                <h2>El Ezaby Pharmacy</h2>
+                                
+                            </div>
+                        </div> 
+                        <div class="child" onclick="openModal('myModal39')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/داونويرازول.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Downoprazol</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal40')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/داونويرازول2.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Downoprazol</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal41')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/دري شو 2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Dre-Sho</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal42')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/روتا باور.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Rota Power </h2>
+                               
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal43')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/ماسكي.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Masky</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal44')">
+                            <img class="child-img" src="/Images/سكرين/مديكال/ماسكي2.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Masky</h2>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-6')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal38" class="modal">
+        <span class="close" onclick="closeModal('myModal38')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/9_0ylG04ctI?si=LPMiLEu3LQd28Eja"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal39" class="modal">
+        <span class="close" onclick="closeModal('myModal39')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/-q1IqDOvpsg?si=Z3DOc22hkGNm5upr"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal40" class="modal">
+        <span class="close" onclick="closeModal('myModal40')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/wN0oehUamzU?si=I0No6IRiCp6jEkKI"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal41" class="modal">
+        <span class="close" onclick="closeModal('myModal41')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/9YHkWDIquIQ?si=mCv4CMQCOg6U3OpY"    loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal42" class="modal">
+        <span class="close" onclick="closeModal('myModal42')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/RpJfBD72WhU?si=J06E9obYPhySk8Ru"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal43" class="modal">
+        <span class="close" onclick="closeModal('myModal43')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/AB9nqXGsl5Y?si=SSzJDx_E4ZJMuF0g"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal44" class="modal">
+        <span class="close" onclick="closeModal('myModal44')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/-y6tykk0Gzw?si=7jFa3-1-j3VExP7G"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+
+    <!-------------------------------7th Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category7', 'main-scroll-div-7','7')">
+            <h1>Clothes</h1>
+            <i id="7" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category7" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-7">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-7')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-7">
+                        <div class="child" onclick="openModal('myModal45')">
+                            <img class="child-img" src="/Images/سكرين/ملابس/تاون تيم.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Town Team</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal46')">
+                            <img class="child-img" src="/Images/سكرين/ملابس/تاي هاوس.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Tie House</h2>
+                                
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal47')">
+                            <img class="child-img" src="/Images/سكرين/ملابس/فيزتيتي2.webp"  alt="image">
+                            <div class="image-details">
+                                <h2>Vetsiti</h2>
+                               
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal48')">
+                            <img class="child-img" src="/Images/سكرين/ملابس/فيزتيتي.webp"  alt="image">
+                            <div class="image-details">
+                                <h2>Vetsiti</h2>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-7')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal45" class="modal">
+        <span class="close" onclick="closeModal('myModal45')">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/embed/NhmAkjDcO3c?si=32qIzKmClxmgBEzi"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal46" class="modal">
+        <span class="close" onclick="closeModal('myModal46')">&times;</span>
+        <div class="modal-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ip3XJiAOGIQ?si=l4FgAW_SXk2p3Ou-"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+        </div>
+    </div>
+    <div id="myModal47" class="modal">
+        <span class="close" onclick="closeModal('myModal47')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/fFK38vwwLmY?si=ggfjkPkUR6LgeElH"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div id="myModal48" class="modal">
+        <span class="close" onclick="closeModal('myModal48')">&times;</span>
+        <div class="modal-content">
+          
+            <iframe src="https://www.youtube.com/embed/Mb77cA_7bOg?si=zBNEJSOHTWCvZiY4"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </div>  
+
+    <!-------------------------------8th Category ---------------------------------------->
+    <div class="category-container">
+        <button class="category-button" onclick="toggleCategory('category8', 'main-scroll-div-8','8')">
+            <h1>Paints</h1>
+            <i id="8" class="fas fa-angle-right"></i>
+        </button>
+        <div id="category8" class="scroll-images-container">
+            <div class="main-scroll-div" id="main-scroll-div-8">
+                <div>
+                    <button class="icon left" onclick="scrolll('image-container-8')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
+                </div>
+        
+                <div class="cover">
+                    <div class="scroll-images" id="image-container-8">
+                        <div class="child" onclick="openModal('myModal49')">
+                            <img class="child-img" src="/Images/سكرين/دهانات/هانز.webp" alt="image">
+                            <div  class="image-details">
+                                <h2>Hanz</h2>
+                            </div>
+                        </div>
+                        <div class="child" onclick="openModal('myModal50')">
+                            <img class="child-img" src="/Images/سكرين/دهانات/بيتك ستور.webp" alt="image">
+                            <div class="image-details">
+                                <h2>Betak Store</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="icon right" onclick="scrollr('image-container-8')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal49" class="modal">
+        <span class="close" onclick="closeModal('myModal49')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/AphqbKSsuJA?si=f3wAPYUmGkQWMVP0"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="myModal50" class="modal">
+        <span class="close" onclick="closeModal('myModal50')">&times;</span>
+        <div class="modal-content">
+          
+          <iframe src="https://www.youtube.com/embed/9Fp2a4sClnI?si=hfqJsUdQHqtoPtKU"  loading="lazy" sandbox="allow-scripts allow-same-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+<!-----------------------------Footer--------------------------------------------->
+<footer>
+    <div class="footer-left">
+        <img src="/Images/Logos&Background/1white txt.png" alt="Logo">
+    </div>
+    <div class="footer-list">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/AboutUs/About.html">About</a></li>
+            <li><a href="/ProductionTv/ProdTv.html">Production TV</a></li>
+            <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+            <li><a href="/Radio/Radio.html">Radio</a></li>
+            <li><a href="/Digital/digital.html">DIGITAL</a></li>
+            <!---<li><a href="/Outdoor/Outdoor.html">OUT DOOR</a></li>-->
+            <div class="email">
+                <img src="/Images/Logos&Background/gmail.png" alt=""> 
+                <a href="mailto:info@omsegy.agency">info@omsegy.agency</a>
+            </div>
+        </ul>
+    </div>
+    <div class="footer-right">
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/omsadvertisingagency"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/oms_advertising/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@omsadvertising7172"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/oms-advertising-agency-911b5322b/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>&copy; 2023 OMS Advertising Agency. All Rights Reserved.</p>
+    </div> 
+</footer>
+     
+     
+     
+    
+</body>
+</html>

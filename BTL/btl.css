@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "sans-serif";
+
+}
+body {
+    background-image: url('/Images/Logos&Background/site.webp');
+    background-repeat: no-repeat;
+   background-size: cover; 
+   background-attachment: fixed;
+   overflow-x: hidden;
+}
+/*                                   Navigation Bar                                                */
+
+.navigationbar h1 {
+    color: aliceblue;
+}
+
+.navigationbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    margin-left: -5px;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navigationbar nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+a:hover {
+    color: rgb(42, 94, 114); /* Change the text color on hover */
+}
+
+
+.btl-link {
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px, 1fr) ); /* Change this line */
+    grid-gap: 30px;
+}
+.gallery img{
+    width:100%;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(31, 38, 65, 0.9);
+    margin-top:50px;
+    height: 380px;
+    width: 100%;
+}
+
+.footer-left img {
+    width: 300px; /* Adjust the width of the logo as needed */
+}
+
+.footer-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list ul li {
+    
+    align-items: center;
+    color:aliceblue;
+    padding: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    list-style: none;
+    
+}
+
+.footer-right {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 50px;
+}
+
+.footer-right ul li {
+    margin-right: 10px;
+
+}
+
+.footer-right ul li img {
+    width: 30px; /* Adjust the width of the social media icons as needed */
+}
+.footer-right .social-media-icons  .fa-facebook-f{
+    color:aliceblue;
+    font-size: 80px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-facebook-f:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons  .fa-youtube{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons .fa-youtube:hover{
+    color:grey;   
+}
+.footer-right .social-media-icons  .fa-instagram{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-instagram:hover{
+    color:grey;
+    
+}
+.footer-right .social-media-icons .fa-linkedin{
+    color:aliceblue;
+    font-size: 70px;
+    padding:0px 10px;
+}
+.footer-right .social-media-icons  .fa-linkedin:hover{
+    color:grey;
+    
+}
+.copyright {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    margin-top: 340px;
+}
+footer p{
+    color: aliceblue;
+    font-size: large;
+    font-family: "Montserrat", "sans-serif";
+
+}
+.email img{
+    width: 20px;
+    margin-bottom: -5px;
+
+}
+
+
+

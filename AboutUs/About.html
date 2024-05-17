@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/AboutUs/About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/BrowerIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/BrowerIcon/favicon-32x32.png">
+    <link rel="manifest" href="/Images/BrowerIcon/site.webmanifest">
+    <link rel="mask-icon" href="/Images/BrowerIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />  
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>OMS</title>
+    <script >
+        window.addEventListener('load', function() {
+        const container = document.querySelector('.container');
+        container.classList.add('show'); // Show the container with the sliding effect
+    }); 
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenu = document.querySelector('nav');
+        const menuIcon = document.getElementById('menu-button'); // Get the menu button element
+        let isMenuOpen = false;
+
+        // Add a click event listener to the menu button
+            menuIcon.addEventListener('click', function(event) {
+                if (isMenuOpen) {
+                  mobileMenu.style.display = 'none';
+                } else {
+                   mobileMenu.style.display = 'block';
+            }
+                isMenuOpen = !isMenuOpen;
+            });
+
+         // Prevent the menu from closing when clicking anywhere else on the page
+        document.addEventListener('click', function(event) {
+            if (isMenuOpen && event.target !== menuIcon && !menuIcon.contains(event.target)) {
+                 mobileMenu.style.display = 'none';
+                 isMenuOpen = false;
+                }
+            });
+        });
+
+    </script>
+     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+</head>
+
+    <!-------------------------------Body---------------------------------------->
+<body>
+  
+    <!-------------------------------Navigation Bar---------------------------------------->
+    <div class="navigationbar">
+        <div class="logo"><a href="/index.html"><img src="/Images/Logos&Background/1white txt.png" alt="" width="125px"></a> </div>
+        <nav>
+            <ul>
+                <li> <a href="/index.html">HOME</a> </li>
+                <li> <a href="/AboutUs/About.html" class="about-link">ABOUT US</a> </li>
+                <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+                <li class="dropdown">
+                    <a href="/ProductionTv/ProdTv.html">PRODUCTION TV</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Furniture</a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Electronics</a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Beverages </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Real Estate  </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Cosmetics </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Pharmaceutical  </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Clothes   </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Paints   </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+
+
+
+                        <!-- Add more items as needed -->
+                    </div>
+                </li>
+                <li><a href="/Radio/Radio.html">RADIO</a></li>
+                <li><a href="/Digital/digital.html">DIGITAL</a></li>
+                <!--<li><a href="/BTL/Btl.html">BTL</a></li>-->
+                <li><a href="/Outdoor/Outdoor.html">OUT DOOR</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menu-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+   
+    <!-------------------------------About Us--------------------------------------------------->
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <div class="column-1">
+                        <h1>WHY TO CHOOSE?</h1>
+                        <p>- Dedicted Teams<br>
+                            - True Partners <br>
+                            - Global know-how <br>
+                            - Focus on innovation <br>
+                            - Respect of the client needs, culture, identity, and objectives
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content">
+                    <div class="column-2">
+                        <h1>WHAT WE DO?</h1>
+                        <p>- Production & Tv, Radio Broadcasting<br>
+                            - OutDoor Advertising <br>
+                            - Branding & Events Managemnent <br>
+                            - Digital Marketing <br>
+                            - BTL
+                        </p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div> 
+    </div>
+    <div class="section-2">
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <div class="column-1">
+                        <h1>Core Values</h1>
+                        <p>
+                           - Innovation: Foster creativity, think
+                            outside of established or perceived
+                            boundaries, and engage in informed
+                            risk taking to set us apart from the fo
+                            competition.<br>
+                            
+                           - Motivation: motivate people to work
+                            hard fo attract, engage, develop,
+                            and retain by providing a great place
+                            to work that provides opportunities for
+                            continuous learning.<br>
+                            
+                           - Satisfaction: satisfying your customers
+                            by understanding their business,
+                            agreeing on KPIs, sharing prospects
+                            mindset and building a plan to make
+                            their presence the best If can be.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="content">
+                    <div class="column-2">
+                        <img src="/Images/Logos&Background/lamba.png2.webp" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="section-3">
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <h1>Our Services</h1>
+                    <div class="column-1">
+                        <h3>A) Traditional marketing </h3>
+                        <p>
+                            1- Media Buying " TV & Radio "<br>
+                            2- Production.<br>
+                            
+                            3- Indoor & Outdoor Adv.<br>
+                            
+                            4- PR " Booths & Events ".<br>
+                            
+                            5- Designs & Printing Services.<br>
+                            6- Cl & Branding.<br>
+                            
+                            7- Digital marketing & Social media.<br>
+                            8- BTL
+
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="content">
+                    <div class="column-2">
+                        <img src="/Images/Logos&Background/pngegg.webp" alt="">
+                    </div>    
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="section-4">
+        <div class="container">
+            <div class="content-section">
+                <div class="content-2">
+                    <div class="column-3">
+                        <h3>A.1.) Branding </h3>
+                        <p>
+                            Your brand is not a product, a website, a logo or your
+                            company name. It's a hard-to-pin-down feeling. It's also the
+                            thing that separates a mediocre brand from a great one.
+                            
+                            At OMS, we will work with you to develop a comprehensive
+                            brand strategy that helps position your company, and ensure
+                            that if stands out and remains memorable in the mind of the
+                            consumer.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-4">
+                        <h3> A.2.) Indoor & Outdoor Advertising</h3>
+                        <p>
+                            The presence of indoor & outdoor advertising continually
+                            reaches consumers where they live, work, shop and play
+
+                            to deliver your marketing/promotional message as they
+                            travel throughout their daily life.
+
+                            With repeated familiarity, exposure and retention, OMS will
+                            help you reach your targeted audience to make a choice
+                            at the point of decision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="container">
+            <div class="content-section">
+                <div class="content-2">
+                    <div class="column-3">
+                        <h3>A.3.) PR "Booths & Events" </h3>
+                        <p>
+                            Our wealth of PR experience and know-how, combined
+                            with our addiction to perfection, means great things for
+                            your business. We love to build a fruitful relationships
+
+                            with our clients, using our tried-and-true business processes,
+                            excellent communication, and red carpet treatment.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-4">
+                        <h3>A.4.) Media Buying " TV & Radio "</h3>
+                        <p>
+                            Media planning and buying is af the heart of everything we do .
+                            We have the wealth of experience needed to expertly
+                            guide our clients through the maze of media options and
+                            innovative technology solutions existing in the market.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-5">
+                        <h3>A.5.) Designs & Printing Services</h3>
+                        <p>
+                            Create a personality for your products with customized
+                            designs that reflects your brand identity and core values.
+                            Your printed marketing materials are the only remnants of
+                            your company that are left behind to your customers.
+
+                            Make sure that they pass the fest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-6">
+        <div class="container">
+            <div class="content-section">
+                <div class="content">
+                    <div class="column-1">
+                        <h3>B) Digital Marketing </h3>
+                        <p>
+                            1- Website Design & Development <br>
+                            2- Social Media & Management <br>
+                            3- Digital Media & Buying <br>
+
+                            4- Creative Concept <br>
+
+                            5- SMS / LBA Campaigns</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="content">
+                    <div class="column-2">
+                        <img src="/Images/Logos&Background/Idea.webp" alt="">
+                    </div>    
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="section-7">
+        <div class="container">
+            <div class="content-section">
+                <div class="content-2">
+                    <div class="column-3">
+                        <h3>B.1.) Web Design & Development</h3>
+                        <p>
+                            Website design is more than just beautiful images, if fells your
+                            audience a story, conveys your brand personality, engages
+                            and informs the user while at the same Time inspiring them
+                            
+                            to take action. with OMS, custom website designs with strategic
+                            insights are created to generate greater brand engagement,
+                            higher conversions and measurable results.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-4">
+                        <h3>B.2.) Social Media Management</h3>
+                        <p>
+                            Social media marketing is essential for a successful online
+                               marketing strategy.
+
+                            At OMS, we don't do planning only, we do Management as well !
+                            Social Media Management can help you better understand
+                            the tools available to you, the benefits of the different
+                            networks, and most importantly, help you plan and execute
+                            your social media strategy accordingly with 24H service.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-8">
+        <div class="container">
+            <div class="content-section">
+                <div class="content-2">
+                    <div class="column-3">
+                        <h3>B.3.) Digital Media Buying </h3>
+                        <p>
+                            Through an extensive network of partners and suppliers, OMS
+                            offers a wide array of digital advertising media to promote
+
+                            any campaign communicating effectively for your target
+                            audience such as Google Adwords, FB Ads, Youtube, High traffic
+                            Websites, Bloggers and influencers & a lot more...
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-4">
+                        <h3>B.4.) Creative Concept</h3>
+                        <p>
+                            We believe that the idea is the center of an organization's universe,
+                            and it should be thoughtfully developed, nurtured, tracked and
+                            amplified to positively differentiate and position it in the market.<br>
+                            At OMS, we work with organizations both new and renowned to
+                            discover special qualities, shape experiences, and evoke the
+
+                            brand's essence at every touch point.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-2">
+                    <div class="column-5">
+                        <h3>B.5.) SMS / LBA Campaigns</h3>
+                        <p>
+                            We deliver the solutions that prepare our clients to meet the
+                            demands and seize the opportunities that mobile presents.
+
+                            At OMS, we take advantage of Geographic location (Location
+                            Based Advertisement) and user history to deliver an engaging
+                            personalized SMS campaigns and much more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-9">
+        <h1> MISSION </h1>
+        <p>
+            Our Awareness and Our Commitment to your business is our every day's Focus to prove it and we will forever be here to Support with a Supreme
+            Quality as well as an Affordable Cost. We are guiding our clients in maintaining the balance between expression of design and business solutions.
+        </p>
+    </div>
+    <div class="section-10">
+        <h1> Vision </h1>
+        <p>
+            
+            Our Vision is to deliver results-oriented marketing programs and brand activation campaigns that enhance our clients' awareness, leverage their sales, and support their growth. We're Passionate about what we do as well as our Seriousness about our successful future. Our ambitious experts never fear to take small risks and believe in the provision of highest quality services        </p>
+    </div>
+
+    
+    
+
+    <!-----------------------------Footer--------------------------------------------->
+    <footer>
+        <div class="footer-left">
+            <img src="/Images/Logos&Background/1white txt.png" alt="Logo">
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/AboutUs/About.html">About</a></li>
+                <li><a href="/ProductionTv/ProdTv.html">Production TV</a></li>
+                <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+                <li><a href="/Radio/Radio.html">Radio</a></li>
+                <li><a href="/Digital/digital.html">DIGITAL</a></li>
+                <li><a href="/Outdoor/Outdoor.html">OUT DOOR</a></li>
+                
+                <div class="email">
+                    <img src="/Images/Logos&Background/gmail.png" alt=""> 
+                    <a href="mailto:info@omsegy.agency">info@omsegy.agency</a>
+                </div>
+                
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/omsadvertisingagency"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/oms_advertising/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@omsadvertising7172"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/oms-advertising-agency-911b5322b/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 OMS Advertising Agency. All Rights Reserved.</p>
+        </div> 
+    </footer>
+    
+   
+    
+    
+</body>
+</html>

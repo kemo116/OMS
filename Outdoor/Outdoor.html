@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Outdoor/Ourtdoor.css">
+    <link rel="stylesheet" href="/BTL/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css" integrity="sha512-ZviKYgETX0n1JH/5oqX7QZ8JQp8pFLBtkKj4Bk+SnZGvUjg/KP7Lk02ScHTLMLM5N7RFyX+qf7eeo+elYKxaxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/BrowerIcon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/BrowerIcon/favicon-32x32.png">
+    <link rel="manifest" href="/Images/BrowerIcon/site.webmanifest">
+    <link rel="mask-icon" href="/Images/BrowerIcon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />  
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="/BTL/btl.js" > </script>
+    <title>OMS</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenu = document.querySelector('nav');
+        const menuIcon = document.getElementById('menu-button'); // Get the menu button element
+        let isMenuOpen = false;
+
+        // Add a click event listener to the menu button
+            menuIcon.addEventListener('click', function(event) {
+                if (isMenuOpen) {
+                  mobileMenu.style.display = 'none';
+                } else {
+                   mobileMenu.style.display = 'block';
+            }
+                isMenuOpen = !isMenuOpen;
+            });
+
+         // Prevent the menu from closing when clicking anywhere else on the page
+        document.addEventListener('click', function(event) {
+            if (isMenuOpen && event.target !== menuIcon && !menuIcon.contains(event.target)) {
+                 mobileMenu.style.display = 'none';
+                 isMenuOpen = false;
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!-------------------------------Navigation Bar---------------------------------------->
+    <div class="navigationbar">
+        <div class="logo"><a href="/index.html"><img src="/Images/Logos&Background/1white txt.png" alt="" width="125px"></a> </div>
+        <nav>
+            <ul>
+                <li> <a href="/index.html">HOME</a> </li>
+                <li> <a href="/AboutUs/About.html" >ABOUT US</a> </li>
+                <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+                <li class="dropdown">
+                    <a href="/ProductionTv/ProdTv.html">PRODUCTION TV</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Furniture</a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Electronics</a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Beverages </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Real Estate  </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Cosmetics </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Pharmaceutical  </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Clothes   </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/ProductionTv/ProdTv.html">Paints   </a>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+
+
+
+                        <!-- Add more items as needed -->
+                    </div>
+                </li>
+                <li><a href="/Radio/Radio.html">RADIO</a></li>
+                <li><a href="/Digital/digital.html">DIGITAL</a></li>
+                <!--<li><a href="/BTL/Btl.html">BTL</a></li>-->
+                <li><a href="/Outdoor/Outdoor.html" class="Outdoor-link">OUT DOOR</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menu-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+
+    <!-------------------------------1st Category ---------------------------------------->
+    <div class="container" id="desktop">
+        <div class="gallery" id="out">
+            
+            <a href="/Images/Outdoor/door1.webp" data-lightbox="models" data-title="Al Mansoura - Gezeeret Elward" >
+                <img src="/Images/Outdoor/door1.webp">
+            </a>
+            <a href="/Images/Outdoor/door2.webp" data-lightbox="models" data-title="Al Mansoura - El Gamaa bridge">
+                <img src="/Images/Outdoor/door2.webp">
+            </a>
+            <a href="/Images/Outdoor/door3.webp" data-lightbox="models" data-title="Al Mansoura - AlGish St.Entrance">
+                <img src="/Images/Outdoor/door3.webp">
+            </a>
+            <a href="/Images/Outdoor/door4.webp" data-lightbox="models" data-title="Tanta - Cornish Al Estad - 306 St. ">
+                <img src="/Images/Outdoor/door4.webp">
+            </a>
+            <a href="/Images/Outdoor/door5.webp" data-lightbox="models" data-title="Al Mansoura - Abd Elsalam Aref St.">
+                <img src="/Images/Outdoor/door5.webp">
+            </a>
+            <a href="/Images/Outdoor/door6.webp" data-lightbox="models" data-title="Al Gamaa Bridge">
+                <img src="/Images/Outdoor/door6.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door7.webp" data-lightbox="models" data-title="Al Mansoura - Al Mashaya">
+                <img src="/Images/Outdoor/door7.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door8.webp" data-lightbox="models" data-title="Mirror - مجمع المواقف">
+                <img src="/Images/Outdoor/door8.webp"> 
+            </a>
+            <a href="/Images/Outdoor/door9.webp" data-lightbox="models" data-title="Al Mansoura -Sandoub Bridge">
+                <img src="/Images/Outdoor/door9.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door10.webp" data-lightbox="models" data-title="Suez Canal St.">
+                <img src="/Images/Outdoor/door10.webp"> 
+            </a>
+            <a href="/Images/Outdoor/door11.webp" data-lightbox="models" data-title="Unipole Al Sadat Road">
+                <img src="/Images/Outdoor/door11.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door12.webp" data-lightbox="models" data-title="Al Mansoura, Ring Road">
+                <img src="/Images/Outdoor/door12.webp"> 
+            </a>
+           <a href="/Images/Outdoor/outimg1.webp" data-lightbox="models" data-title="October Bridge, Coming From El Batal Ahmed Abd elaziz Towards Downtown & Ramsis">
+                <img src="/Images/Outdoor/outimg1.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg2.webp" data-lightbox="models" data-title="Arkan Plaza Al Sheikh Zayid">
+                <img src="/Images/Outdoor/outimg2.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg3.webp" data-lightbox="models" data-title="Back Side">
+                <img src="/Images/Outdoor/outimg3.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg4.webp" data-lightbox="models" data-title="Al Giza - Cairo University">
+                <img src="/Images/Outdoor/outimg4.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg5.webp" data-lightbox="models" data-title="Al Ataba Sq. - Al Atar St.">
+                <img src="/Images/Outdoor/outimg5.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg6.webp" data-lightbox="models" data-title="October Bridge El Sharabia Coming From Ramsis & Downtown Towards Nasr City & Salah Salem">
+                <img src="/Images/Outdoor/outimg6.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg7.webp" data-lightbox="models" data-title="Mehwer 26th of July Coming From Lebanon Sq. Towards 6 of October City">
+                <img src="/Images/Outdoor/outimg7.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg8.webp" data-lightbox="models" data-title="October Bridge Entrance, Coming From El Batal Ahmed Abdul Azeez St. Towards Tahrir Sq.">
+                <img src="/Images/Outdoor/outimg8.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg9.webp" data-lightbox="models" data-title="Maadi Cornish (2)">
+                <img src="/Images/Outdoor/outimg9.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg10.webp" data-lightbox="models" data-title="Coming From Maadi Carrefour Towards Sokhna Entrance In Front Of Baron Mall">
+                <img src="/Images/Outdoor/outimg10.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg11.webp" data-lightbox="models" data-title="October Bridge - El-Sharabiah Coming From Tahrir Towards Saleh Salem  ">
+                <img src="/Images/Outdoor/outimg11.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg12.webp" data-lightbox="models" data-title="Ring Road Sama Tower, Coming From Maadi & Monib Towards Qattameya & New Cairo.">
+                <img src="/Images/Outdoor/outimg12.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg13.webp" data-lightbox="models" data-title="Kasr El Nile Tunnel ">
+                <img src="/Images/Outdoor/outimg13.webp"> 
+            </a>
+            <a href="/Images/Outdoor/outimg14.webp" data-lightbox="models" data-title="Al Sayeda Zinab.">
+                <img src="/Images/Outdoor/outimg14.webp"> 
+            </a>
+            <a href="/Images/Outdoor/door16.webp" data-lightbox="models" data-title="Caption6">
+                <img src="/Images/Outdoor/door16.webp"> 
+            </a>
+            <a href="/Images/Outdoor/door13.webp" data-lightbox="models" data-title="Caption6">
+                <img src="/Images/Outdoor/door13.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door14.webp" data-lightbox="models" data-title="Caption6">
+                <img src="/Images/Outdoor/door14.webp"> 
+            </a>
+	    <a href="/Images/Outdoor/door15.webp" data-lightbox="models" data-title="Caption6">
+                <img src="/Images/Outdoor/door15.webp"> 
+            </a>
+
+        </div>
+    </div>
+    <div class="container" id="mobile">
+        <div class="gallery" id="out">
+            <div class="row-container">
+                <a href="/Images/Outdoor/door1.webp" data-lightbox="models" data-title="Al Mansoura - Gezeeret Elward" >
+                    <img src="/Images/Outdoor/door1.webp">
+                </a>
+                <a href="/Images/Outdoor/door2.webp" data-lightbox="models" data-title="Al Mansoura - El Gamaa bridge">
+                    <img src="/Images/Outdoor/door2.webp">
+                </a>
+                <a href="/Images/Outdoor/door3.webp" data-lightbox="models" data-title="Al Mansoura - AlGish St.Entrance">
+                    <img src="/Images/Outdoor/door3.webp">
+                </a>
+                <a href="/Images/Outdoor/door4.webp" data-lightbox="models" data-title="Tanta - Cornish Al Estad - 306 St. ">
+                    <img src="/Images/Outdoor/door4.webp">
+                </a>
+                <a href="/Images/Outdoor/door5.webp" data-lightbox="models" data-title="Al Mansoura - Abd Elsalam Aref St.">
+                    <img src="/Images/Outdoor/door5.webp">
+                </a>
+                <a href="/Images/Outdoor/door6.webp" data-lightbox="models" data-title="Al Gamaa Bridge">
+                    <img src="/Images/Outdoor/door6.webp"> 
+                </a>
+            <a href="/Images/Outdoor/door7.webp" data-lightbox="models" data-title="Al Mansoura - Al Mashaya">
+                    <img src="/Images/Outdoor/door7.webp"> 
+                </a>
+            <a href="/Images/Outdoor/door8.webp" data-lightbox="models" data-title="Mirror - مجمع المواقف">
+                    <img src="/Images/Outdoor/door8.webp"> 
+                </a>
+                <a href="/Images/Outdoor/door9.webp" data-lightbox="models" data-title="Al Mansoura -Sandoub Bridge">
+                    <img src="/Images/Outdoor/door9.webp"> 
+                </a>
+            <a href="/Images/Outdoor/door10.webp" data-lightbox="models" data-title="Suez Canal St.">
+                    <img src="/Images/Outdoor/door10.webp"> 
+                </a>
+            </div>
+            <div class="row-container">
+                <a href="/Images/Outdoor/door11.webp" data-lightbox="models" data-title="Unipole Al Sadat Road">
+                    <img src="/Images/Outdoor/door11.webp"> 
+                </a>
+            <a href="/Images/Outdoor/door12.webp" data-lightbox="models" data-title="Al Mansoura, Ring Road">
+                    <img src="/Images/Outdoor/door12.webp"> 
+                </a>
+               <a href="/Images/Outdoor/outimg1.webp" data-lightbox="models" data-title="October Bridge, Coming From El Batal Ahmed Abd elaziz Towards Downtown & Ramsis">
+                    <img src="/Images/Outdoor/outimg1.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg2.webp" data-lightbox="models" data-title="Arkan Plaza Al Sheikh Zayid">
+                    <img src="/Images/Outdoor/outimg2.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg3.webp" data-lightbox="models" data-title="Back Side">
+                    <img src="/Images/Outdoor/outimg3.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg4.webp" data-lightbox="models" data-title="Al Giza - Cairo University">
+                    <img src="/Images/Outdoor/outimg4.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg5.webp" data-lightbox="models" data-title="Al Ataba Sq. - Al Atar St.">
+                    <img src="/Images/Outdoor/outimg5.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg6.webp" data-lightbox="models" data-title="October Bridge El Sharabia Coming From Ramsis & Downtown Towards Nasr City & Salah Salem">
+                    <img src="/Images/Outdoor/outimg6.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg7.webp" data-lightbox="models" data-title="Mehwer 26th of July Coming From Lebanon Sq. Towards 6 of October City">
+                    <img src="/Images/Outdoor/outimg7.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg8.webp" data-lightbox="models" data-title="October Bridge Entrance, Coming From El Batal Ahmed Abdul Azeez St. Towards Tahrir Sq.">
+                    <img src="/Images/Outdoor/outimg8.webp"> 
+                </a>
+               
+            </div>
+            <div class="row-container">
+                <a href="/Images/Outdoor/outimg9.webp" data-lightbox="models" data-title="Maadi Cornish (2)">
+                    <img src="/Images/Outdoor/outimg9.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg10.webp" data-lightbox="models" data-title="Coming From Maadi Carrefour Towards Sokhna Entrance In Front Of Baron Mall">
+                    <img src="/Images/Outdoor/outimg10.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg11.webp" data-lightbox="models" data-title="October Bridge - El-Sharabiah Coming From Tahrir Towards Saleh Salem  ">
+                    <img src="/Images/Outdoor/outimg11.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg12.webp" data-lightbox="models" data-title="Ring Road Sama Tower, Coming From Maadi & Monib Towards Qattameya & New Cairo.">
+                    <img src="/Images/Outdoor/outimg12.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg13.webp" data-lightbox="models" data-title="Kasr El Nile Tunnel ">
+                    <img src="/Images/Outdoor/outimg13.webp"> 
+                </a>
+                <a href="/Images/Outdoor/outimg14.webp" data-lightbox="models" data-title="Al Sayeda Zinab.">
+                    <img src="/Images/Outdoor/outimg14.webp"> 
+                </a>
+                <a href="/Images/Outdoor/door16.webp" data-lightbox="models" data-title="Caption6">
+                    <img src="/Images/Outdoor/door16.webp"> 
+                </a>
+                <a href="/Images/Outdoor/door13.webp" data-lightbox="models" data-title="Caption6">
+                    <img src="/Images/Outdoor/door13.webp"> 
+                </a>
+                <a href="/Images/Outdoor/door14.webp" data-lightbox="models" data-title="Caption6">
+                    <img src="/Images/Outdoor/door14.webp"> 
+                </a>
+                <a href="/Images/Outdoor/door15.webp" data-lightbox="models" data-title="Caption6">
+                    <img src="/Images/Outdoor/door15.webp"> 
+                </a>
+    
+            </div>
+            
+        </div>
+    </div>
+
+     
+    <!-----------------------------Footer--------------------------------------------->
+    <footer>
+        <div class="footer-left">
+            <img src="/Images/Logos&Background/1white txt.png" alt="Logo">
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/AboutUs/About.html">About</a></li>
+                <li><a href="/ProductionTv/ProdTv.html">Production TV</a></li>
+                <li> <a href="/Clients/Clients.html">OUR CLIENTS</a> </li>
+                <li><a href="/Radio/Radio.html">Radio</a></li>
+                <li><a href="/Digital/digital.html">DIGITAL</a></li>
+                <li><a href="/Outdoor/Outdoor.html">OUT DOOR</a></li>
+                
+                <div class="email">
+                    <img src="/Images/Logos&Background/gmail.png" alt=""> 
+                    <a href="mailto:info@omsegy.agency">info@omsegy.agency</a>
+                </div>
+                
+            </ul>
+        </div>
+        <div class="footer-right">
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/omsadvertisingagency"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/oms_advertising/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@omsadvertising7172"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/oms-advertising-agency-911b5322b/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 OMS Advertising Agency. All Rights Reserved.</p>
+        </div> 
+    </footer>
+    <script src="/BTL/lightbox-plus-jquery.js"></script>
+</body>
+</html>
